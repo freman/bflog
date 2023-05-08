@@ -29,7 +29,7 @@ func main() {
 		panic(err)
 	}
 
-	callback, err := goph.DefaultKnownHosts()
+	callback, err := getKnownHosts(cfg)
 	if err != nil {
 		panic(err)
 	}
